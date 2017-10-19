@@ -1,0 +1,53 @@
+.new-tweet {
+    padding-left: 2em;
+    padding-right: 2em;
+    border: 2px solid grey;
+    border-radius: 10px;
+    background-color: Azure;
+}
+#compose    {
+    float: right;
+}
+.new-tweet h2{  
+    margin-top: 4px;
+    margin-bottom: 0px;
+}
+#tweeterTitleLine    {
+    display: block;
+    border-style: inset;
+    border-width: 2px;
+}
+textarea{
+    margin: auto;
+    width: 100%;
+    height: auto;
+    resize: vertical;
+}
+#subTweet   {
+    margin-bottom: 4px;
+}
+span.counter    {
+    float: right;
+    margin-right: 6px;
+}
+/* section for the tweets  
+section.tweets  {
+    background-color: Beige;
+}
+*/
+article.tweet {
+    margin-top: 5px;
+    padding-left: 2em;
+    padding-right: 2em;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+article > header  {
+    background-color: Gainsboro;
+}
+#errMsg{
+    color: red;
+    font: 15px, arial, sans serif;
+    text-decoration: border, blink;
+    visibility: hidden;
+}
