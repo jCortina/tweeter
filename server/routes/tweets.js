@@ -13,6 +13,9 @@ module.exports = function(DataHelpers) {
         res.status(500).json({ error: err.message });
       } else {
         res.json(tweets);
+        //
+        // res.headers['Content-Type'] = 'application/json';
+        // res.send(JSON.stringify(tweets));
       }
     });
   });

@@ -34,7 +34,12 @@
     <nav id="nav-bar">
       <img class="logo" src="/images/bird.png">
       <span class="header">Tweeter</span>
-      <button type="button" id="compose" name="compose" onclick="composeTweet()">Click Me</button> 
+      <button type="button" id="compose" name="compose" onclick="composeTweet()">
+        <span id="imgSpan">
+          <img id="compImg" src="/images/compose.jpg"></img>
+        </span>
+        <span id="compTxt">Compose</span>
+      </button> 
     </nav>
 
     <!-- Page-specific (main) content here -->
@@ -45,14 +50,12 @@
         <h2>Compose Tweet</h2>
         <hr id="tweeterTitleLine">
 
-        <form method="POST" action="/tweets">
+        <form id="newTweet" method="POST" action="/tweets">
           <textarea id="tweetext" name="text" placeholder="Type your message here"></textarea>
           <input id="subTweet" type="submit" value="Tweet">
           <span id="errMsg"></span>
           <span class="counter">140</span>
-        </form>
-        
-
+        </form>  
       </section>      
     
       <!-- the container to contain the individual tweets -->

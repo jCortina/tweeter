@@ -1,12 +1,30 @@
 .new-tweet {
+    margin-top: 6px;
     padding-left: 2em;
     padding-right: 2em;
     border: 2px solid grey;
     border-radius: 10px;
     background-color: Azure;
 }
-#compose    {
+#compose    {   
     float: right;
+    height: 85%;
+    width: 12%;
+    margin: auto, 2em, auto, 2em;
+    border-radius: 6px;
+    border-width:  5px;
+    color: black;
+    border-color: rgb(49, 28, 13);
+    background-color: mediumorchid;
+}
+#compose:hover  {
+    background: beige;
+    color: white;
+    box-shadow: inset 0 0 0 3px #3a7999;
+}
+#compImg    {
+    max-width: 15%;
+    max-height: 90%;
 }
 .new-tweet h2{  
     margin-top: 4px;
@@ -35,15 +53,48 @@ section.tweets  {
     background-color: Beige;
 }
 */
+.container  {
+    background: white;
+}
+.new-tweet  {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.tweets {
+    margin-left: 2em;
+    margin-right: 2em;
+}
 article.tweet {
-    margin-top: 5px;
-    padding-left: 2em;
-    padding-right: 2em;
+    background: white;
+    margin-top:  8px;    
     border: 2px solid grey;
     border-radius: 10px;
 }
 article > header  {
-    background-color: Gainsboro;
+    padding-left: 2em;
+    padding-right: 2em;
+    color: white;
+    background-color: rgb(148, 129, 129);
+}
+span.user   {
+    font-size:  125%;
+    margin-left: 2em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+span.handle {
+    float: right;
+    font-size: 115%;
+    margin: auto;
+}
+p.tweetmsg  {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+article > footer{
+    padding-left: 2em;
+    padding-right: 2em;
+    background-color: beige;
 }
 #errMsg{
     color: red;
