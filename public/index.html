@@ -6,7 +6,7 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
-
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- External Font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,700,700i" rel="stylesheet">
 
@@ -20,7 +20,7 @@
 
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.js"></script>
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
@@ -33,7 +33,7 @@
 
     <nav id="nav-bar">
       <img class="logo" src="/images/bird.png">
-      <span class="header">Tweeter</span>
+      <span class="header">Tweeter </span>
       <button type="button" id="compose" name="compose" onclick="composeTweet()">
         <span id="imgSpan">
           <img id="compImg" src="/images/compose.jpg"></img>
@@ -48,8 +48,6 @@
 
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
-        <hr id="tweeterTitleLine">
-
         <form id="newTweet" method="POST" action="/tweets">
           <textarea id="tweetext" name="text" placeholder="Type your message here"></textarea>
           <input id="subTweet" type="submit" value="Tweet">

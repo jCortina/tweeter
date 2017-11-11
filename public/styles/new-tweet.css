@@ -27,13 +27,9 @@
     max-height: 90%;
 }
 .new-tweet h2{  
-    margin-top: 4px;
-    margin-bottom: 0px;
-}
-#tweeterTitleLine    {
-    display: block;
-    border-style: inset;
-    border-width: 2px;
+    border-bottom: 3px solid black;
+    padding: 0 0 5px;
+    margin: .5em 0;
 }
 textarea{
     margin: auto;
@@ -69,16 +65,16 @@ article.tweet {
     margin-top:  8px;    
     border: 2px solid grey;
     border-radius: 10px;
+    overflow: hidden;
 }
 article > header  {
-    padding-left: 2em;
-    padding-right: 2em;
+    padding: .5em;
     color: white;
     background-color: rgb(148, 129, 129);
 }
 span.user   {
-    font-size:  125%;
-    margin-left: 2em;
+    font-size:  1.25em;
+    margin-left: .25em;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -92,8 +88,7 @@ p.tweetmsg  {
     padding-right: 2em;
 }
 article > footer{
-    padding-left: 2em;
-    padding-right: 2em;
+    padding:.25em;
     background-color: beige;
 }
 #errMsg{
@@ -102,3 +97,15 @@ article > footer{
     text-decoration: border, blink;
     visibility: hidden;
 }
+.tweet header img {
+    border-radius: 5px;
+    float:left;
+}
+.icons  {
+    float: right;
+    visibility: hidden;
+}
+.tweet:hover .icons{
+    visibility:visible;
+}
+

@@ -88,11 +88,18 @@ $( function()   {
         <img src="${data.user.avatars.small}">
         <span class="user">${data.user.name}</span>
         <span class="handle">${data.user.handle}</span>
+        <div style='clear:both;'/>
       </header>
       <p class="tweetmsg">${data.content.text}</p>
-      <footer><hr></hr>
-        <span class="date">${data.created_at}</span>
-      </footer>
+      <footer>
+        <span class="date">${moment(data.created_at).fromNow()}</span>
+        <span class='icons'>
+        <i class="fa fa-flag" aria-hidden="true"></i>
+        <i class="fa fa-retweet" aria-hidden="true"></i>
+        <i class="fa fa-heart-o" aria-hidden="true"></i>        
+        </span>
+        <div style='clear:both;'/>
+        </footer>
     </article>
       `;
     return tweetHTML;
