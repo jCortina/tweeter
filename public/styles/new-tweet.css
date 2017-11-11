@@ -4,7 +4,7 @@
     padding-right: 2em;
     border: 2px solid grey;
     border-radius: 10px;
-    background-color: Azure;
+    background-color: rgb(204, 233, 212);
 }
 #compose    {   
     float: right;
@@ -14,7 +14,7 @@
     border-radius: 6px;
     border-width:  5px;
     color: black;
-    border-color: rgb(49, 28, 13);
+    border-color: rgb(176, 211, 185);
     background-color: mediumorchid;
 }
 #compose:hover  {
@@ -70,7 +70,7 @@ article.tweet {
 article > header  {
     padding: .5em;
     color: white;
-    background-color: rgb(148, 129, 129);
+    background-color: rgb(119, 187, 141);
 }
 span.user   {
     font-size:  1.25em;
@@ -89,7 +89,7 @@ p.tweetmsg  {
 }
 article > footer{
     padding:.25em;
-    background-color: beige;
+    background-color: rgb(229, 248, 218);
 }
 #errMsg{
     color: red;
